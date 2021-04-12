@@ -2,9 +2,9 @@ body{
     position: relative;
     align-items:center;
     font-family: 'Nanum Gothic', sans-serif;
-    padding-right:100px;
-    padding-left: 100px; 
     height: 100%;
+    padding-right:100px;
+    padding-left: 100px;
   }
   .material-icons{
 
@@ -12,12 +12,16 @@ body{
 
   }
   
+
+  /*헤더*/
+  
   header {
       margin: 0 auto;
       background: white;
       align-items:center;
       display: flex;
-      height: 37px;
+      height: 37px;    
+
   
   }
 
@@ -151,25 +155,70 @@ body{
     margin-right:15px;
     margin-left:15px;
     margin-top: 15px;
-    border: 2px #666;
     font-size: 14px;
-
-
-  }
-  menu ul.menu_one li.home a{
-    height: 40px;
-    padding-top: 1px;
     text-decoration:none;
-    color: white;
-  }
-  menu ul.menu_one li.home .home_button{
-    height: 40px;
-    width: 40px;
-    color: white;
-    background-color: rgb(46, 206, 46);
-    background-clip: content-box;
-    padding: 1px 10px 1px 10px;
-    
     
   }
 
+
+  
+  div.menu {
+    clear: both;
+    border-top: 1px solid #8d8787;
+    border-bottom: 1px solid #8d8787;
+    background: #fff;
+    padding: 0 10px;
+    width: 960px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  a:-webkit-any-link{
+    text-decoration: none;
+    color:black;
+    
+
+  }
+
+  /*메인*/
+div.main {
+  width: 960px;
+  text-align: left;
+  height: 250px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+div.today{
+
+  float: left;
+  width: 90px;
+  height: 250px;
+  padding: 0 5px 0 15px;
+  border: 1px solid #e5e5e5;
+  border-right: 1px;
+
+}
+
+h2 {
+  font-size: 30px;
+  color:black;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-bottom: -2px;
+}
+
+h3{
+  font-size: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: rgb(156, 248, 18);
+}
+
+h4{
+  font-size: 10px;
+}
+
+div.todaywebtoon{
+  margin-top:20px;
+  margin-bottom:5px;
+  padding: 0px;
+}
