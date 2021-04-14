@@ -141,6 +141,7 @@ body{
     color: #666;
     text-align: center;
   }
+
   header .login .material-icons{
 
     font-size: 32px;
@@ -148,17 +149,24 @@ body{
 
 }
 
-  li{
+  li.home{
 
     float: left;
-    font-weight: bolder;
     margin-right:15px;
     margin-left:15px;
     margin-top: 15px;
     font-size: 14px;
     text-decoration:none;
-    
-  }
+    display: block;
+      }
+   ul.menu li a {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
 
   
@@ -172,6 +180,7 @@ body{
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 
   a:-webkit-any-link{
@@ -182,6 +191,8 @@ body{
   }
 
   /*메인*/
+
+
 div.main {
   width: 960px;
   text-align: left;
@@ -210,7 +221,7 @@ h2 {
 h3{
   font-size: 30px;
   font-family: 'Noto Sans KR', sans-serif;
-  color: rgb(156, 248, 18);
+  color: rgb(4, 226, 52);
 }
 
 h4{
@@ -221,4 +232,71 @@ div.todaywebtoon{
   margin-top:20px;
   margin-bottom:5px;
   padding: 0px;
+}
+
+ul.order{
+  font-size: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color:rgb(95, 95, 95);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+ul.order li a{
+  display: block;
+  height: 22px;
+  text-decoration:none;
+
+}
+
+div.popular{
+    background-size: 194px 159px;
+    display: inline-block;
+    width: 32px;
+    height: 12px;
+}
+
+div.update{
+  background-size: 194px 159px;
+  display: inline-block;
+  width: 54px;
+  height: 12px;
+}
+
+
+
+div.inquiry{
+  background-size: 194px 159px;
+  display: inline-block;
+  width: 32px;
+  height: 12px;
+
+}
+
+div.star{
+  background-size: 194px 159px;
+  display: inline-block;
+  width: 32px;
+  height: 12px;
+
+}
+div.small image{
+  position: relative;
+  padding: 0 20px 0 19px;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+li.small{
+  float:left;
+}
+
+span.btn1{
+  left: 0;
+  width: 19px;
+}
+
+div.webtoonmain{
+  float: left;
+  width: 582px;
 }
