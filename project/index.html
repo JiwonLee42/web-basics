@@ -53,124 +53,162 @@
         </fieldset>
     </header>
 <!--메뉴-->
-<div class="menu">
-    <ul class="menu_one">
-        <li class="home">
-        <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
-            <a href="http://127.0.0.1:5500/index.html">홈
-                <div class="home_button"></div>
-            </a>
-        </li>
-        <li class="home">
-            <a herf="https://comic.naver.com/webtoon/weekday.nhn">웹툰
-                <div class="webtoon">
+<section>
+    <div class="menu">
+        <ul class="menu_one">
+            <li class="home">
+            <!-- 클릭하면 홈으로 이동-->
+                <a href="http://127.0.0.1:5500/index.html">홈
+                    <div class="home_button"></div>
+                </a>
+            </li>
+            <li class="home">
+                <a herf="https://comic.naver.com/webtoon/weekday.nhn">웹툰
+                    <div class="webtoon">
+                    </div>
+                </a>
+            </li>
+            <li class="home">
+                <a herf="https://comic.naver.com/genre/bestChallenge.nhn">베스트 도전
+                    <div class="best"></div>
+                </a>
+            </li>
+
+            <li class="home">
+                <a herf="https://comic.naver.com/genre/challenge.nhn">도전만화
+                    <div class="cartoon"></div>
+                </a>
+            </li >
+            <li class="home">마이페이지</li>
+            <li class="home"> 
+                <a herf="https://series.naver.com/comic/recommendList.nhn">단행본
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--오늘의 웹툰-->
+    <main>
+        <div id="main-todaywebtoon">
+            <div class="today">
+                <div class="todaywebtoon">
+                    <h2>오늘의</h2><br><h3>웹툰</h3>
                 </div>
-            </a>
-        </li>
-        <li class="home">
-            <a herf="https://comic.naver.com/genre/bestChallenge.nhn">베스트 도전
-                <div class="best"></div>
-            </a>
-        </li>
-
-        <li class="home">
-            <a herf="https://comic.naver.com/genre/challenge.nhn">도전만화
-                <div class="cartoon"></div>
-            </a>
-        </li >
-        <li class="home">마이페이지</li>
-        <li class="home"> 
-            <a herf="https://series.naver.com/comic/recommendList.nhn">단행본
-            </a>
-        </li>
-    </ul>
-
-</div>
-
-<!--오늘의 웹툰-->
-<div id="main">
-    <div id="main-todaywebtoon">
-        <div class="today">
-            <div class="todaywebtoon">
-                <h2>오늘의</h2><br><h3>웹툰</h3>
+                <h4>4월 13일 화요일</h4>
+                <ul class="order">
+                    <li>
+                        <a herf>
+                            <div class="popular">인기순
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a herf>
+                            <div class="update">업데이트순
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a herf>
+                            <div class="inquiry">조회순
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a herf>
+                            <div class="star">별점순
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <h4>4월 13일 화요일</h4>
-            <ul class="order">
-                <li>
-                    <a herf>
-                        <div class="popular">인기순
-                        </div>
+
+        </div>
+        <div class="webtoonmain">
+            <div class="big image">
+                <img src="https://image-comic.pstatic.net/webtoon/760001/thumbnail/thumbnail_IMAG02_4603d2d0-d7d3-4b11-ba77-751bd2d7ed78.jpg" alt="하렘의 남자들">
+            </div>
+            <div class="small image">
+                <div class="webtoonlist">
+                <ul class="img">
+                    <li class="small">
+                        <a onclick>
+                        <img src="https://image-comic.pstatic.net/webtoon/760001/thumbnail/thumbnail_IMAG03_bdb53edc-4f65-48d7-a133-087120ccb7a9.jpg" alt="하렘의 남자들2">
+                        </a>
+                    </li>  
+                    <li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/739503/thumbnail/thumbnail_IMAG03_528ee2d5-9acd-40b1-9737-33fe67f7c531.jpg" alt="화이트블러드2">
+                    </li>
+                    <li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG03_aad77435-78a8-4095-968f-43a05df08569.jpg" alt="독립일기2">
+                    </li>
+                    <li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/570503/thumbnail/thumbnail_IMAG03_87345f7d-8476-4c39-a549-53ca9029f8fb.jpg" alt="연애혁명2">
+                    </li>
+                    <!--<li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/731130/thumbnail/thumbnail_IMAG03_cf4dc728-eee2-4c2a-9c42-3266a84141bf.jpg" alt="이두나2">
+                    </li>    
+                    <li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/727798/thumbnail/thumbnail_IMAG03_de75bd09-2b06-49bf-bde3-65b8e315aea8.jpg" alt="겟백2">
+                    </li>
+                    <li class="small">
+                        <img src="https://image-comic.pstatic.net/webtoon/740487/thumbnail/thumbnail_IMAG03_5db6d641-fb7f-4a94-b893-29260442a295.jpg" alt="신비2">
+                    </li>-->
+                </ul>
+            </div>    
+            </div>
+            <div class="slide_button">
+                <!--앞으로가는 버튼-->
+                <a herf="#"><span class="btn1"></span></a>
+                <!--뒤로가는 버튼--> 
+                <a herf="#"><span class="btn2"></span></a>
+            </div>
+        </div>
+        <!--새로운 도전만화-->
+        <div class="newchallenge">
+            <h8><p5>새로운</p5><p4> 베스트 도전만화</p4></h8>
+            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/03/15/mingmong1010/thumbnail_218x120a426c878_0b73_4eb0_b5f6_c82aef175585_00003328.JPEG" class="webtoonimg" alt="공원여행">
+            <div class="newchallaccount">
+                    
+                    <a onclick="newchallcartoon" herf="https://comic.naver.com/bestChallenge/list.nhn?titleId=765419" class="newchallname">
+                        공원여행</a>
+                    <a onclick="" herf="https://comic.naver.com/artistTitle.nhn?artistId=342696" class="name">
+                        mingmong1010
                     </a>
-                </li>
-                <li>
-                    <a herf>
-                        <div class="update">업데이트순
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a herf>
-                        <div class="inquiry">조회순
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a herf>
-                        <div class="star">별점순
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                    <br><div class="account">* [공원여행]은 매달 5일, 15일, 25일에 연재됩니다. 스무 살 젊은 나이에 병으로 숨진 왕녀, 화경옹주 이공원. 세상을 향한 불만을 가득 품은 채 죽고 나서 다시 깨어난 곳은 2년 전, 18살 자신의 과거였다. 예정된 혼인을 거부하여 궐 밖으로 쫓겨나고 제멋대로 살려했던 공원에게, 세상은 수많은 변화구를 던지며 독한 술 대신 따뜻한 차 한잔을 권한다!</div>
+
+            </div>
         </div>
 
-    </div>
-    <div class="webtoonmain">
-        <div class="big image">
-            <img src="https://image-comic.pstatic.net/webtoon/760001/thumbnail/thumbnail_IMAG02_4603d2d0-d7d3-4b11-ba77-751bd2d7ed78.jpg" alt="하렘의 남자들">
-        </div>
-        <div class="small image">
-            <div class="webtoonlist">
-            <ul class="img">
-                <li class="small">
-                    <a onclick>
-                    <img src="https://image-comic.pstatic.net/webtoon/760001/thumbnail/thumbnail_IMAG03_bdb53edc-4f65-48d7-a133-087120ccb7a9.jpg" alt="하렘의 남자들2">
-                     </a>
-                </li>  
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/739503/thumbnail/thumbnail_IMAG03_528ee2d5-9acd-40b1-9737-33fe67f7c531.jpg" alt="화이트블러드2">
-                </li>
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG03_aad77435-78a8-4095-968f-43a05df08569.jpg" alt="독립일기2">
-                </li>
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/570503/thumbnail/thumbnail_IMAG03_87345f7d-8476-4c39-a549-53ca9029f8fb.jpg" alt="연애혁명2">
-                </li>
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/731130/thumbnail/thumbnail_IMAG03_cf4dc728-eee2-4c2a-9c42-3266a84141bf.jpg" alt="이두나2">
-                </li>    
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/727798/thumbnail/thumbnail_IMAG03_de75bd09-2b06-49bf-bde3-65b8e315aea8.jpg" alt="겟백2">
-                </li>
-                <li class="small">
-                    <img src="https://image-comic.pstatic.net/webtoon/740487/thumbnail/thumbnail_IMAG03_5db6d641-fb7f-4a94-b893-29260442a295.jpg" alt="신비2">
-                </li>
-            </ul>
-        </div>    
-        </div>
-        <div class="slide_button">
-            <!--앞으로가는 버튼-->
-            <a herf="#"><span class="btn1"></span></a>
-            <!--뒤로가는 버튼--> 
-            <a herf="#"><span class="btn2"></span></a>
+        </main>
+    <!--장르별 추천웹툰-->
+    <div id="zenre">
+        <h5><p4> 장르별</p4><p5> 추천웹툰</p5></h5>
+
+        <div class="zenrewebtoon">
+
         </div>
     </div>
-<!--새로운 도전만화-->
-<div id="new challenge"></div>
-
-</div>
-<!--장르별 추천웹툰-->
-<div id="zenre"></div>
-
-
+    <!--광고-->
+    <div class="ad"></div>
+    <!--웹툰 올리기-->
+    <div class="webtoonupload"></div>
+    <!--웹툰광고-->
+    <div class="webtoonad"></div>
+    <!--도전만화 추천-->
+    <div class="challenge webtoon">
+    <h6><p4>베스트도전&도전</p4><p5> 추천웹툰</p5></h6>
+    </div>
+    <!--단행본 추천-->
+    <div class="webtoonbook"></div>
+    <h7><p4>장르별</p4><p5> 인기 단행본만화</p5></h7>
+    <!--인기급상승-->
+    <div class="popularwebtoon"></div>
+    <!--실시간 급상승-->
+    <div class="realtimesurge"></div>
+</section>
+<footer>
+</footer>
 </body>
 </html>

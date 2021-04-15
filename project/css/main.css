@@ -3,8 +3,9 @@ body{
     align-items:center;
     font-family: 'Nanum Gothic', sans-serif;
     height: 100%;
-    padding-right:100px;
-    padding-left: 100px;
+    margin-right: 84px;
+    margin-left: 84px;
+    text-align:center;
   }
   .material-icons{
 
@@ -21,6 +22,10 @@ body{
       align-items:center;
       display: flex;
       height: 37px;    
+      padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
 
   
   }
@@ -49,7 +54,7 @@ body{
   }
   
   p2 {
-      font-family: 'Nanum Gothic', sans-serif;  
+      font-family:'Noto Sans KR', sans-serif;
       float: left;
       width: 40px;
       height: 21px;
@@ -175,12 +180,15 @@ body{
     border-top: 1px solid #8d8787;
     border-bottom: 1px solid #8d8787;
     background: #fff;
-    padding: 0 10px;
     width: 960px;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
   }
 
   a:-webkit-any-link{
@@ -192,7 +200,11 @@ body{
 
   /*메인*/
 
-
+  main{
+    width:960px;
+    height:252px;
+    padding:10px;
+  }
 div.main {
   width: 960px;
   text-align: left;
@@ -280,6 +292,8 @@ div.star{
   height: 12px;
 
 }
+
+
 div.small image{
   position: relative;
   padding: 0 20px 0 19px;
@@ -300,3 +314,86 @@ div.webtoonmain{
   float: left;
   width: 582px;
 }
+
+/*새로운 도전만화*/
+div.newchallenge{
+  width: 202px;
+  height: 250px;
+  padding-right:18px;
+  padding-left:18px;
+  border:1px solid #bebbbb;
+  background-color:#f9f9fc;
+  float:right;
+  text-overflow:ellipsis; /*말줄임표표시*/
+  
+}
+
+img.webtoonimg{
+  width: 202px;
+  height: 110px;
+  border: solid 1px #a5a5a5;
+
+}
+
+h8{
+  width: 150px;
+  height: 18px;
+  margin-top: 20px;
+  margin-bottom:3px;
+  display:block;
+
+}
+a.nechallname{
+  font-weight:bolder;
+  padding:60px;
+  display:block;
+}
+a.name{
+  text-align:right;
+  text-overflow:ellipsis; /*넗이 초과시 말줄임표 표시*/
+}
+
+div.newchallaccount{
+  font-size:11px;
+  text-align:left;
+  font-weight:bolder;
+
+}
+
+div.account {
+  font-size:11px;
+  text-overflow:ellipsis; /*넗이 초과시 말줄임표 표시*/
+  color: #909394;
+  width:202px;
+  height:54px;
+  margin-top:5px;
+  margin-bottom:1px;
+  overflow:hidden; /*잘리는 부분 숨기기*/
+  word-break:keep-all; /*줄바꿀 때 단어 끊기지 않게 하기*/
+}
+
+
+/*장르별 추천웹툰*/
+
+h5{
+  display:block;
+  width:694px;
+  height:56px;
+  text-align:left;
+  padding-top: 30px;
+  padding-bottom: 5px;
+
+}
+
+p4{
+  font-size:15px;
+  font-family:'Noto Sans KR', sans-serif;
+  color: black;
+}
+
+p5{
+  font-size:15px;
+  font-family:'Noto Sans KR', sans-serif;
+  color:rgb(4, 226, 52);
+}
+
