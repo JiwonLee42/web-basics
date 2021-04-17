@@ -1,0 +1,343 @@
+body{
+font-size: 12px;
+color: #434343;
+height: 100%;
+margin: 0;
+background: #fff;
+text-align: center;
+display: block;
+}
+
+a{
+    text-decoration:none;
+}
+
+material-icons{
+    cursor: pointer;
+}
+
+div#wrap{
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+li,ul{
+    list-style: none;
+}
+
+ul{
+    display: block;
+   /* list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;*/
+  }
+  
+
+/*헤더*/
+
+header{
+    margin: 0;
+    padding: 0;
+    display:block;
+}
+
+#headerpage{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+#headerpage h1 .naver_logo{
+    float: left;
+    width: 53px;
+    height: 10px;
+    background-position: 0 -170px;
+    margin-top: 6px;
+    color: black;
+}
+
+.naver_logo{
+    display: inline-block;
+    font-family:Arial;
+    vertical-align: top;
+    font-weight:1000;
+}
+
+.naver_comic{
+    float:left;
+    vertical-align: top; /*수직정렬*/
+    font-family:'Noto Sans KR', sans-serif;
+    width: 40px;
+    height: 21px;
+    background-position: -65px -170px;
+    margin-left: 7px;
+    font-size:20px;
+    font-weight:bolder;
+    color:black;
+}
+
+[class="naver_comic"]{
+    display: inline-block;
+}
+
+
+#bar{
+    float: left;
+    overflow: hidden;
+    width: 1px;
+    height: 13px;
+    margin: 6px 10px 0 8px;
+    background-color: #d2d2d2;
+    line-height: 1000px;
+    vertical-align: top;
+}
+
+.naver_novel{
+    float: left;
+    width: 40px;
+    height: 15px;
+    background-position: -120px -170px;
+    font-family:'Noto Sans KR', sans-serif;
+    margin-top: 3px;
+    font-weight:bolder;
+    color:#434343;
+    font-size: 14px;
+
+}
+
+[class="naver_novel"]{
+    display: inline-block;
+}
+
+.headerarea{
+    height: 37px; 
+    padding: 10px 0 8px;
+}
+/*메뉴*/
+#menu{
+    border-top: 1px solid #e4e2e2;
+    border-bottom: 1px solid #eeebeb;
+    padding: 0 10px;
+    display:block;
+
+}
+
+
+#menu ul.menu_one li div{
+    width: 13px;
+    height: 14px;
+    margin-top: 13px;
+}
+
+ul.menu_one{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display:block;
+    height:40px;
+
+}
+
+#menu ul.menu_one li{
+
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+    color: black;
+    float: left;
+    background-position: 0 -20px;
+    position: relative;
+    
+}
+#menu ul.menu_one li a{
+    display:inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+    color: black;
+}
+
+span.bar{
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #ced2d6;
+    vertical-align: top;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.newwebtoon a{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    float:left;
+    height: 41px;
+    color: #fff;
+    padding-top: 1px;
+    background-color:rgb(4, 226, 52);
+    margin: -1px 0;
+}
+
+header:after{
+    display: block;
+    clear: both;
+}
+
+#menu:after{
+    display: block;
+    clear: both;
+}
+
+/*메인*/
+
+main{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+}
+
+.mainpage{
+    float: left;
+}
+
+.textarea{
+    float: left;
+    width: 91px;
+    height: 250px;
+    padding: 0 5px 0 15px;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    
+}
+
+h2{
+    width: 79px;
+    height: 61px;
+    background-position: 0 -100px;
+    margin-top: 20px;
+    vertical-align: top;
+    font-family:'Noto Sans KR', sans-serif;
+    font-size:27px;
+}
+
+
+p1{
+    color:black;
+}
+
+p2{
+    color:rgb(4, 226, 52);
+}
+
+
+div.newchallenge{
+    float: right;
+    width: 202px;
+    height: 250px;
+    padding: 0 18px;
+    background: #f9f9fc;
+    border: 1px solid #ebebeb;
+}
+
+main:after{
+    display: block;
+    clear: both;
+}
+
+.webtoonarea:after{
+    display: block;
+}
+ul.listarea:after{
+    display: block;
+}
+
+.webtoonarea{
+    float: left;
+    width: 582px;
+}
+.mainimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    opacity: .1;
+}
+.webtoonlist{
+    position: relative;
+    padding: 0 20px 0 19px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+a.previous span.material-icons{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 15px;
+}
+a.previous{
+    left: 0;
+    width: 19px;
+    position: absolute;
+    top: 0;
+    height: 57px;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left:1px solid #e5e5e5;
+    border-top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+a.next{
+    right: 0;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    height: 57px;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left:1px solid #e5e5e5;
+    border-top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+a.next span.material-icons{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+ul.listarea{
+    margin-left: -405px;
+    width: 8640px;
+    display:block;
+}
+/*section*/
+
+/*footer*/
+
+footer{
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+    padding: 40px 10px 78px;
+    border-top: 1px solid #e6e7e8;
+    display:block;
+}

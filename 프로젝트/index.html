@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 만화</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">          
+    <!-- 각 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">  
+    <!-- Google Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--js 연결-->
+    <script src="./js/index.js"></script>
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="https://ssl.pstatic.net/static/comic/favicon/webtoon_favicon_32x32.ico" type="image/x-icon">
+</head>
+<body>
+<div id="wrap" class="end_page">
+    <!--헤더-->
+    <header>
+        <div id="headerpage">
+            <div class="headerarea">
+                <h1>
+                    <a onclick="Naverlogo" herf="https://www.naver.com/" class="naver_logo">NAVER</a> 
+                    <a onclick="Naverwebtoon" herf="http://127.0.0.1:5501/index.html" class="naver_comic">만화</a>
+                    <strong id="bar">ㅣ</strong>
+                    <a onclick="Navernovel" herf="" class="naver_novel">웹소설</a>
+                </h1>
+            </div>
+        </div>
+        <!--메뉴-->
+        <div id="menu">
+            <ul class="menu_one">
+                <li>
+                <!-- 클릭하면 홈으로 이동-->
+                    <a href="http://127.0.0.1:5501/index.html">홈
+                        <div class="home_button"></div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/webtoon/weekday.nhn">웹툰
+                        <div class="webtoon">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/genre/bestChallenge.nhn">베스트 도전
+                        <div class="best"></div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/genre/challenge.nhn">도전만화
+                        <div class="cartoon"></div>
+                    </a>
+                </li >
+                <li>
+                    <a herf="#">마이페이지
+                        <div class="mypage"></div>
+                    </a>
+                </li>
+                <li>
+                    <span class="bar"></span>
+                </li>
+                <li> 
+                    <a herf="https://series.naver.com/comic/recommendList.nhn">단행본 만화
+                        <div class="bookcartoon"></div>
+                    </a>
+                </li>
+                <li> 
+                    <a herf="https://series.naver.com/comic/recommendList.nhn">장르소설
+                        <div class="zenrenovel"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="mainpage">
+            <div class="textarea">
+                <h2><p1>오늘의</p1><br><p2>웹툰</p2></h2>
+                <p3>4월 24일 토요일</p3>
+            </div>
+            <div class="webtoonarea">
+                <div class="bigimg">
+                    <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG02_0da450ff-1992-4f36-8294-d5942fdf7209.jpg" alt="독립일기big">
+                    <span class="mainimg"></span>
+                <div class="webtoonlist">
+                    <div class="list">
+                        <ul class="listarea">
+                            
+                        </ul>
+                    </div>
+
+                        <a herf="#" onclick="click_previous" class="previous">
+                            <span class="material-icons">
+                                navigate_before
+                            </span>
+                        </a>   
+                        <a herf="#" onclick="click_next" class="next">
+                            <span class="material-icons">
+                                navigate_next
+                            </span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="newchallenge">
+            
+        </div>
+        </div>
+    </main>
+    <section>
+    </section>
+    <footer>
+        <div class="naver_footer1">
+            <ul></ul> 
+        </div>
+    </footer>
+</div>
+</body>
+</html>
