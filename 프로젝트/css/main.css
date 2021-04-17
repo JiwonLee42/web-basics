@@ -284,6 +284,7 @@ header:after{
     padding-right: 10px;
     padding-bottom: 14px;
     padding-left: 10px;
+    height: 250px;
 }
 
 .mainpage{
@@ -424,6 +425,7 @@ a.name{
 h3 {
     height: 16px;
     margin-top: 20px;
+    margin-bottom:10px;
     padding-right:2px;
     font-size:16px;
     font-family:'Noto Sans KR', sans-serif;
@@ -459,7 +461,139 @@ div.account{
     margin: 0 auto;
 }
 /*장르별 웹툰*/
+.genrewebtoonrecommend{
+    float:left;
+    overflow: hidden;
+    width:694px;
+}
+h4{
+    padding-top: 30px;
+    font-weight:bolder;
+    font-size:18px;
+    display:block;
+    position: relative;
+}
+.genremain{
+    width: 140px;
+    height: 20px;
+}
+ul.genrewebtoonlist{
+    display:block;
+    border-bottom: 1px solid #e5e5e5;
+    height:20px;
+}
+ul.genrewebtoonlist li a{
+    display: inline-block;
+    font-size: 13px;
+    color:#434343;
+    padding: 0 2px 6px;
+    font-weight:bolder;
 
+}
+
+ul.genrewebtoonlist li{
+    float: left;
+    padding: 0 6px;
+
+}
+p3{
+    color:black;
+}
+
+p4{
+    color:rgb(4, 226, 52);
+}
+
+#genre{
+    margin-top: 12px;
+    width:694px;
+}
+.webtoonorder{
+    margin: 12px 0;
+    width:694px;
+    height:30px;
+}
+
+ul.order_list{
+    margin-top: 3px;
+    float:right;
+    display:block;
+
+}
+ul.order_list li {
+    font-weight:bolder;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#666;
+    float:left;
+    margin-left:12px;
+}
+
+
+ul.genreimglist{
+    overflow: hidden;
+    margin: 0 -10px;
+    padding-bottom: 17px;
+}
+
+ul.genreimglist li{
+    height: 196px;
+    float: left;
+    padding: 0 10px;
+    width: 218px;
+}
+div.genreaccount{
+    text-align:left;
+}
+
+h5{
+    color: #434343;
+    font-size: 12px;
+    font-weight:bolder;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+p{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+span.author{
+    margin-top:5px;
+}
+
+/*right section*/
+
+.sidearea{
+    float: right;
+    width: 240px;
+    padding-right: 10px;
+}
+
+
+.ad{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #ced2d6;
+}
+
+.webtoonupload{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: block;
+    width: 240px;
+    background-color:rgb(4, 226, 52);
+    padding-top:15px;
+    padding-bottom:15px;
+    border: 1px solid #ced2d6;
+}
+
+.webtoonupload_text{
+    text-align:center;
+    color:white;
+    font-weight: 800px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
 
 /*footer*/
 
@@ -472,25 +606,3 @@ footer{
     display:block;
 }
 
-h3{
-    padding-top: 30px;
-    font-weight:bolder;
-}
-.zenremain{
-    width: 112px;
-    height: 16px;
-}
-ul.zenrewebtoonlist{
-    border-bottom: 1px solid #e5e5e5;
-}
-ul.zenrewebtoonlist li a{
-    display: inline-block;
-    font-size: 13px;
-    color: #737373;
-    padding: 0 2px 6px;
-}
-
-ul.zenrewebtoonlist li{
-    float: left;
-    padding: 0 6px;
-}
