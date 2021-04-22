@@ -28,12 +28,6 @@ li,ul{
 
 ul{
     display: block;
-   /* list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;*/
   }
   
 
@@ -395,9 +389,9 @@ a.next span.material-icons{
 }
 
 ul.listarea{
-    margin-left: -405px;
-    width: 8640px;
     display:block;
+    margin-left: -4050px;
+    width: 7695px;
 }
 
 ul.listarea li{
@@ -405,6 +399,12 @@ ul.listarea li{
     width: 134px;
     border-left: 1px solid #e5e5e5;
 }
+
+/* ul.listarea li img{
+    overflow: hidden;
+    
+}*/
+
 /*새로운 도전만화*/
 
 div.newchallenge{
@@ -560,6 +560,99 @@ span.author{
     margin-top:5px;
 }
 
+
+
+/*베스트도전&도전만화*/
+
+.best_challenge{
+    overflow: hidden;
+    width:694px;
+    float:left;
+    text-align:left;
+}
+
+
+ul.challengewebtoon{
+    padding-bottom: 33px;
+    overflow: hidden;
+}
+
+
+ul.challengewebtoon li{
+    float: left;
+    width: 218px;
+    padding-left:10px;
+}
+
+h5{ 
+    font-size: 13px;
+    color: #555;
+    margin-top: 14px;
+
+}
+
+ul.challengewebtoon img{
+    width: 83px;
+    aspect-ratio: auto 83 / 90;
+    height: 90px;
+}
+
+.best_account{
+    float: right;
+    overflow: hidden;
+    width: 127px;
+    margin-left: 7px;
+}
+
+h6{
+    font-size:13px;
+    font-weight:bolder;
+    display: block;
+}
+
+p{
+    font-weight:normal;
+    font-size:12px;
+    display: block;
+}
+div.summary{
+    height: 32px;
+    margin: 10px 0 7px 0;
+    color: #434343;
+    line-height: 16px;
+    font-size:12px;
+}
+
+div.rate{
+    width: 90px;
+    height: 14px;
+    padding:0px;
+}
+
+span.star em{
+
+    display: block;
+    background: url(https://ssl.pstatic.net/static/comic/images/migration/common/sp_star.gif) no-repeat 0 -19px;
+    text-indent: -9999px;
+    text-align:left;
+    float:left;
+
+}
+
+span.star{
+    width: 60px;
+    height: 14px;
+    display:block;
+}
+
+.score{     /*안보임! 해결해야함*/
+    display:inline-block;
+    margin-left: 3px;
+    font-size:11px;
+    color:black;
+    padding-left:0px;
+    vertical-align: middle;
+}
 /*right section*/
 
 .sidearea{
@@ -595,14 +688,87 @@ span.author{
 
 }
 
+.webtoonad{
+    width: 240px;
+    aspect-ratio: auto 240 / 97;
+    height: 97px;
+    border:1px solid #d2d2d2;
+
+}
+
+
+
+
 /*footer*/
 
 footer{
     width: 960px;
     margin: 0 auto;
     clear: both;
-    padding: 40px 10px 78px;
+    padding-top:40px;
     border-top: 1px solid #e6e7e8;
+    display:block;
+    font-size:12px;
+    padding-bottom:60px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.naver_footer1{
+    float: left;
+    width: 480px;
+}
+
+ul.footer1 li,ul.footer2 li{
+    float:left;
+}
+
+.naver_footer2{
+    float:right;
+    width:450px;
+    position:relative;
+}
+li.footer,li.footer_bold{
+    margin:1px;
+}
+
+span.bar2{
+    height:30px;
+    color:#666;
+}
+
+span.bar{
+    height:16px;
+    color:#666;
+    margin:3px;
+}
+
+li.footer_bold{
+    font-weight:bolder;
+}
+
+.navercorp{
+    text-align:left;
+    font-weight:lighter;
+    font-size:14px;
+    width:200px;
+    height:15px;
+    float:left;
+    margin-bottom:15px;
+    margin-top:12px;
+}
+
+.footer_text{
+    padding-top: 60px;
+    position:absolute;
+    margin-bottom:30px;
+}
+
+#footer_top::after{
     display:block;
 }
 
+#footer_top{
+    width:940px;
+    height:30px;
+}

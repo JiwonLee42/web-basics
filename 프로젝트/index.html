@@ -119,11 +119,12 @@
                 <div class="webtoonlist">
                     <div class="list">
                         <ul class="listarea">
-                            <li class><img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG03_aad77435-78a8-4095-968f-43a05df08569.jpg" alt="독립일기">
+                            <li class>
+                                <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG03_aad77435-78a8-4095-968f-43a05df08569.jpg" alt="독립일기">
                                 <span class="sel_bar"></span>
                                 <span class="mainimg" style="display:none">"https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG02_0da450ff-1992-4f36-8294-d5942fdf7209.jpg"</span>
                             </li>
-                            <li class><img src="https://image-comic.pstatic.net/webtoon/703839/thumbnail/thumbnail_IMAG03_28beee78-490d-4bcc-ba02-c4cf81b7764a.jpg" alt="홍시는 날 좋아해!">
+                                <li class><img src="https://image-comic.pstatic.net/webtoon/703839/thumbnail/thumbnail_IMAG03_28beee78-490d-4bcc-ba02-c4cf81b7764a.jpg" alt="홍시는 날 좋아해!">
                                 <span class="sel_bar"></span></li>
                             <li class><img src="https://image-comic.pstatic.net/webtoon/703630/thumbnail/thumbnail_IMAG03_1f0731f1-dce8-47d1-b605-a298426ab78e.jpg" alt="어글리후드">
                                 <span class="sel_bar"></span></li>
@@ -145,17 +146,18 @@
                                 <span class="sel_bar"></span></li>
                         </ul>
                     </div>
-
-                        <a herf="#" onclick="click_previous" class="previous">
-                            <span class="material-icons">
-                                navigate_before
-                            </span>
-                        </a>   
-                        <a herf="#" onclick="click_next" class="next">
-                            <span class="material-icons">
-                                navigate_next
-                            </span>
-                        </a>
+                        <div class="slide_btn">
+                            <a herf="#" onclick="click_previous" class="previous">
+                                <span class="material-icons">
+                                    navigate_before
+                                </span>
+                            </a>   
+                            <a herf="#" onclick="click_next" class="next">
+                                <span class="material-icons">
+                                    navigate_next
+                                </span>
+                            </a>    
+                        </div>      
                     </div>
                 </div>
             </div>
@@ -302,11 +304,12 @@
                         </li>
                     </ul>
                      <!--도전만화 추천-->
-                    <div class="challenge webtoon">
-                        <h4><p3>베스트도전&도전</p3><p4> 추천웹툰</p4></h4>
-                        <div class="best_ep">
-                            <h5 class="sub_title"></h5>
+                <div class="best_challenge">
+                    <h4><p3>베스트도전&도전만화</p3><p4> 추천웹툰</p4></h4>
+                    <ul class="challengewebtoon">
+                        <li class="best_ep">
                             <ul class="ep_list">
+                                <h5 class="sub_title">에피소드</h5>
                                 <li>
                                     <a herf="#">                                    
                                         <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2020/08/18/yeand/thumbnail_83x9035f24a77_78a2_4b54_9ded_243cdba95224_00004158.JPEG" alt="급식으로 사는 법">
@@ -352,7 +355,8 @@
                                     <div class="best_account">
                                         <h6>섭섭하지 않은 쿼카</h6>
                                         <p>i_memymine</p>
-                                        <div class="summary">하루,그림일기 웹툰</div>
+                                        <div class="summary">하루,그림일기 웹툰          
+                                        </div>
                                         <div class="rate">
                                             <span class="star">
                                                 <em style="width:78%" title="점">평점</em>
@@ -362,7 +366,10 @@
                                     </div>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="best_omn">
                             <ul class="omn_list">
+                                <h5 class="sub_title">옴니버스</h5>
                                 <li>
                                     <a herf="#">                                    
                                         <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/01/24/ae_gukja/thumbnail_83x90c07c6050_301e_4ebc_895e_0daf4572ff78_00006623.JPEG" alt="우리 카페 사장님이 이상하다">
@@ -418,7 +425,10 @@
                                     </div>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="best_story">
                             <ul class="story_list">
+                                <h5 class="sub_title">스토리</h5>
                                 <li>
                                     <a herf="#">                                    
                                         <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/04/02/dpqls504/thumbnail_83x90cc485652_3c32_4f7f_8a2a_ed21a3aac76f_00000596.JPEG" alt="LADS'PARTY">
@@ -474,13 +484,10 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <!--단행본 추천-->
-                    <div class="webtoonbook"></div>
-                        <h4><p3>장르별</p3><p4> 인기 단행본만화</p4></h4>
-                    
-                </div>
+                        </li>
+                    </ul>
+                </div>                    
+            </div>
 
             
                 <div class="sidearea">
@@ -491,17 +498,57 @@
                     <a herf="#" class="webtoonupload_text">웹툰 올리기</a>
                 </div>
                 <!--웹툰광고-->
-                <div class="webtoonad"></div>
-                <!--인기급상승-->
-                <div class="popularwebtoon"></div>
+                <img src="https://naverwebtoon-phinf.pstatic.net/20210414_60/1618406299506TlGw2_JPEG/upload_832236373774656806.JPEG?type=p100" alt="웹툰광고" class="webtoonad">
+            
+                <!--인기급상승 만화-->
+                <div class="popularwebtoon">
+                    <h7 class="title">인기급상승 만화</h7>
+                    <div class="popular_order">인기순</div>
+                    <div class="update_order">업데이트순</div>
+                    
+                </div>
+
                 <!--실시간 급상승-->
                 <div class="realtimesurge"></div>
                 </div>
             </div>
     <footer>
+    <div id="footer_top">
         <div class="naver_footer1">
-            <ul></ul> 
+            <ul class="footer1">
+                <li class="footer">이용약관</li>
+                <li><span class="bar"></span></li>
+                <li class="footer_bold">개인정보처리방침</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">책임의 한계와 법적고지</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">고객센터</li> 
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 광고 문의</li>
+            </ul> 
+            <br><a herf="https://www.navercorp.com/" class="navercorp">
+            ⓒ NAVER CORP.
+            </a>
         </div>
-    </footer>
+        <span class="bar2"></span>
+        <div class="naver_footer2">
+            <ul class="footer2">
+                <li class="footer">이용약관</li>
+                <li><span class="bar"></span></li>
+                <li class="footer_bold">개인정보처리방침</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">청소년보호정책</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 고객센터</li> 
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 사업 문의</li>
+            </ul>
+            <br><a herf="https://webtoonscorp.com/" class="navercorp">ⓒNAVER WEBTOON Limited</a>
+        </div>      
+    </div>
+        <div class="footer_text">
+        본 콘텐츠의 저작권은 저자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다. 
+        </div>
+</footer>
 </body>
 </html>
