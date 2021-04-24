@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 만화</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">          
+    <!-- 각 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">  
+    <!-- Google Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--js 연결-->
+    <script src="./js/index.js"></script>
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="https://ssl.pstatic.net/static/comic/favicon/webtoon_favicon_32x32.ico" type="image/x-icon">
+</head>
+<body>
+<div id="wrap" class="end_page">
+    <!--헤더-->
+    <header>
+        <div id="headerpage">
+            <div class="headerarea">
+                <h1>
+                    <a onclick="Naverlogo" herf="https://www.naver.com/" class="naver_logo">NAVER</a> 
+                    <a onclick="Naverwebtoon" herf="http://127.0.0.1:5501/index.html" class="naver_comic">만화</a>
+                    <strong id="bar">ㅣ</strong>
+                    <a onclick="Navernovel" herf="" class="naver_novel">웹소설</a>
+                </h1>
+            <div class="headersectionright">
+                <div class="searchbox">
+                        <div class="search">
+                            <input id="search__box" placeholder="제목/작가로 검색할 수 있습니다." />
+                        </div>
+                        <button class="searchicon">
+                            <span class="material-icons">
+                            search
+                            </span>
+                        </button>
+                        </div>
+                </div>
+                <div class="headerright">
+                    <span class="log_in">로그인
+                    </span>
+                    <span class="material-icons">
+                    apps
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--메뉴-->
+        <div id="menu">
+            <ul class="menu_one">
+                <li>
+                <!-- 클릭하면 홈으로 이동-->
+                    <a href="http://127.0.0.1:5501/index.html">홈
+                        <div class="home_button"></div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/webtoon/weekday.nhn">웹툰
+                        <div class="webtoon">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/genre/bestChallenge.nhn">베스트 도전
+                        <div class="best"></div>
+                    </a>
+                </li>
+                <li>
+                    <a herf="https://comic.naver.com/genre/challenge.nhn">도전만화
+                        <div class="cartoon"></div>
+                    </a>
+                </li >
+                <li>
+                    <a herf="#">마이페이지
+                        <div class="mypage"></div>
+                    </a>
+                </li>
+                <li>
+                    <span class="bar"></span>
+                </li>
+                <li> 
+                    <a herf="https://series.naver.com/comic/recommendList.nhn">단행본 만화
+                        <div class="bookcartoon"></div>
+                    </a>
+                </li>
+                <li> 
+                    <a herf="https://series.naver.com/comic/recommendList.nhn">장르소설
+                        <div class="zenrenovel"></div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="mainpage">
+            <div class="textarea">
+                <h2><p1>오늘의</p1><br><p2>웹툰</p2></h2>
+                <p3>4월 24일 토요일</p3>
+                <div class="main_order">
+                    <ul class="mainorder_list">
+                        <li><a herf="#">인기순</a></li>
+                        <li><a herf="#">업데이트순</a></li>
+                        <li><a herf="#">조회순</a></li>
+                        <li><a herf="#">별점순</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="webtoonarea">
+                <div class="bigimg">
+                    <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG02_0da450ff-1992-4f36-8294-d5942fdf7209.jpg" alt="독립일기big">
+                    <span class="mainimg"></span>
+                </div>
+                <div class="webtoonlist">
+                    <div class="list">
+                        <ul class="listarea">
+                            <li class>
+                                <img src="https://image-comic.pstatic.net/webtoon/748105/thumbnail/thumbnail_IMAG03_aad77435-78a8-4095-968f-43a05df08569.jpg" alt="독립일기">
+                                <span class="sel_bar"></span>
+                            </li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/703839/thumbnail/thumbnail_IMAG03_28beee78-490d-4bcc-ba02-c4cf81b7764a.jpg" alt="홍시는 날 좋아해!">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/703630/thumbnail/thumbnail_IMAG03_1f0731f1-dce8-47d1-b605-a298426ab78e.jpg" alt="어글리후드">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/739503/thumbnail/thumbnail_IMAG03_528ee2d5-9acd-40b1-9737-33fe67f7c531.jpg" alt="화이트블러드">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/721948/thumbnail/thumbnail_IMAG03_804deff7-bb2b-4666-a8f1-037542d50fa0.jpg" alt="스터디그룹">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/755744/thumbnail/thumbnail_IMAG03_5903ec53-50ce-4812-b4aa-8bdc788bed2e.jpg" alt="왕년엔용사님">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/597447/thumbnail/thumbnail_IMAG03_cfa55801-b0a7-4cff-8706-6e649819720e.jpg" alt="프리드로우">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/570503/thumbnail/thumbnail_IMAG03_87345f7d-8476-4c39-a549-53ca9029f8fb.jpg" alt="연애혁명">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/731130/thumbnail/thumbnail_IMAG03_cf4dc728-eee2-4c2a-9c42-3266a84141bf.jpg" alt="이두나">
+                                <span class="sel_bar"></span></li>    
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/727798/thumbnail/thumbnail_IMAG03_de75bd09-2b06-49bf-bde3-65b8e315aea8.jpg" alt="겟백">
+                                <span class="sel_bar"></span></li>
+                            <li class><img src="https://image-comic.pstatic.net/webtoon/740487/thumbnail/thumbnail_IMAG03_5db6d641-fb7f-4a94-b893-29260442a295.jpg" alt="신비">
+                                <span class="sel_bar"></span></li>
+                        </ul>
+                    </div>
+                        <div class="slide_btn">
+                            <a herf="#" onclick="click_previous" class="previous">
+                                <span class="material-icons">
+                                    navigate_before
+                                </span>
+                            </a>   
+                            <a herf="#" onclick="click_next" class="next">
+                                <span class="material-icons">
+                                    navigate_next
+                                </span>
+                            </a>    
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        <!--새로운 도전만화-->    
+        <div class="newchallenge">
+            <h3><p1>새로운</p1><p2> 베스트 도전만화</p2></h3>
+            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/04/03/xxxvangogh/thumbnail_218x120f181356a_817e_4566_8d84_289229f1c9bb_00000854.JPEG" class="webtoonimg" alt="스토커의 하루">
+            <div class="newchallaccount">
+                    
+                    <a onclick="newchallcartoon" herf="https://comic.naver.com/bestChallenge/list.nhn?titleId=765419" class="newchallname">
+                        스토커의 하루</a>
+                    <a onclick="" herf="https://comic.naver.com/artistTitle.nhn?artistId=342696" class="name">
+                        xxxvangogh
+                    </a>
+                    <br><div class="account">남자를 따라 옆집으로 이사 온 스토커, 그를 위해 어떤 짓까지 할 수 있을까?</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="section">
+        <div class="leftarea">
+            <div class="genrewebtoonrecommend">
+                <h4>
+                    <div class="genremain">
+                        <p3>장르별</p3><p4> 추천웹툰</p4>
+                    </div>
+                </h4>
+                <div id="genre">
+                        <ul class="genrewebtoonlist">
+                            <li class>
+                                <a herf="#" class="ep">에피소드 </a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="omnibus">옴니버스</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="story">스토리</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="routine">일상</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="comedy">개그</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="fantasy">판타지</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="action">액션</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="drama">드라마</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="romance">순정</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="sensibility">감성</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="thriller">스릴러</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="history">시대극</a>
+                            </li>
+                            <li class>
+                                <a herf="#" class="sport">스포츠</a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="webtoonorder">
+                        <ul class="order_list">
+                            <li><a herf="#">인기순</a></li>
+                            <li><a herf="#">업데이트순</a></li>
+                            <li><a herf="#">조회순</a></li>
+                            <li><a herf="#">별점순</a></li>
+                        </ul>
+                    </div>
+                        <ul class="genreimglist">
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/728015/thumbnail/thumbnail_IMAG04_417f59a7-469f-4a4f-a4da-65818377f134.jpg" alt="모죠의 일지">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">모죠의 일지</h5>
+                                    <p>205화: 눕지 않기 챌린지</p>
+                                    <span class="author">모죠</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/748105/thumbnail/thumbnail_IMAG04_2b479f04-a16b-4fa2-9a05-bc60cd84022c.jpg" alt="독립일기">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">독립일기</h5>
+                                    <p>83화 벚꽃이 왜 벌써</p>
+                                    <span class="author">자까</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/761104/thumbnail/thumbnail_IMAG04_d5ad6415-f07f-4f30-a711-12be871428cf.jpg" alt="곱게 키웠더니,짐승">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">곱게 키웠더니,짐승</h5>
+                                    <p>22화</p>
+                                    <span class="author">이른꽃,티바/여슬기</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/710751/thumbnail/thumbnail_IMAG04_7964989e-a30f-44f3-bade-b7f7b521b7e7.jpg" alt="약한영웅">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">약한영웅</h5>
+                                    <p>135화</p>
+                                    <span class="author">서패스/김진석</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/730657/thumbnail/thumbnail_IMAG04_4f5f5272-efe2-48de-a303-e81e3489cc6a.jpg" alt="오로지 너를 이기고 싶어">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">오로지 너를 이기고 싶어</h5>
+                                    <p>94화</p>
+                                    <span class="author">이마도지/사삭</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a herf="#">
+                                    <img src="https://shared-comic.pstatic.net/thumb/webtoon/732955/thumbnail/thumbnail_IMAG04_48fcd69c-3091-4bca-bd5d-7e8605d22cfc.jpg" alt="닥터앤닥터 육아일기">
+                                    <span class="genreimg2"></span>
+                                </a>
+                                <div class="genreaccount">
+                                    <h5 class="webtoontitle">닥터앤닥터 육아일기</h5>
+                                    <p>172.가난1</p>
+                                    <span class="author">닥터베르</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--도전만화 추천-->
+                    <div class="best_challenge">
+                        <h4><p3>베스트도전&도전만화</p3><p4> 추천웹툰</p4></h4>
+                        <ul class="challengewebtoon">
+                            <li class="best_ep">
+                                <ul class="ep_list">
+                                    <h5 class="sub_title">에피소드</h5>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2020/08/18/yeand/thumbnail_83x9035f24a77_78a2_4b54_9ded_243cdba95224_00004158.JPEG" alt="급식으로 사는 법">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>급식으로 사는 법</h6>
+                                            <p>yeand</p>
+                                            <div class="summary">리얼 학교생활</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:94%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.45</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2020/11/17/dhleh/thumbnail_83x906fb3ec49_89db_4fc0_b72d_9c33b7d1009b_00001250.JPEG" alt="방에 콕! 진댕">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>방에 콕! 진댕</h6>
+                                            <p>dhleh</p>
+                                            <div class="summary">방에 콕! 일상툰</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:98%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.87</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2020/08/01/i_memymine/thumbnail_83x9092680dcc_504a_451e_893d_e7d5737609ca_00001446.JPEG" alt="섭섭하지 않은 쿼카">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>섭섭하지 않은 쿼카</h6>
+                                            <p>i_memymine</p>
+                                            <div class="summary">하루,그림일기 웹툰          
+                                            </div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:78%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">7.80</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="best_omn">
+                                <ul class="omn_list">
+                                    <h5 class="sub_title">옴니버스</h5>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/01/24/ae_gukja/thumbnail_83x90c07c6050_301e_4ebc_895e_0daf4572ff78_00006623.JPEG" alt="우리 카페 사장님이 이상하다">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>우리 카페 사장님이 이...</h6>
+                                            <p>ae_gukja</p>
+                                            <div class="summary">이상한 카페 알바기</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:98%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.90</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/04/11/momo7028/thumbnail_83x90ed003aa4_f4ff_4887_8f4f_650a99c04c10_00001589.JPEG" alt="좀비 패밀리">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>좀비 패밀리</h6>
+                                            <p>momo7028</p>
+                                            <div class="summary">(구)신혼좀비</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:98%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.88</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/04/01/yojun0808/thumbnail_83x90976700e1_66d5_4fd6_bafb_68fe9c614a52_00000503.JPEG" alt="오늘의 햄스터">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>오늘의 햄스터</h6>
+                                            <p>yojun0808</p>
+                                            <div class="summary">햄찌들의 일상</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:87%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">8.73</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="best_story">
+                                <ul class="story_list">
+                                    <h5 class="sub_title">스토리</h5>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/04/02/dpqls504/thumbnail_83x90cc485652_3c32_4f7f_8a2a_ed21a3aac76f_00000596.JPEG" alt="LADS'PARTY">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>LADS'PARTY</h6>
+                                            <p>dpqls504</p>
+                                            <div class="summary">판타지 액션</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:97%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.76</strong>
+                                            </div>    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/02/21/bybomhan/thumbnail_83x9094c83a03_8cef_4938_9949_ea4d52136138_00003920.JPEG" alt="육식 토끼">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>육식 토끼</h6>
+                                            <p>bybomhan</p>
+                                            <div class="summary">모순의 성장 드라마</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:97%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">9.79</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a herf="#">                                    
+                                            <img src="https://shared-comic.pstatic.net/thumb/nas/user_contents_data/challenge_comic/2021/03/05/siunim10/thumbnail_83x9005420eaa_c8b4_4f1b_9369_d26a0f345e20_00000450.JPEG" alt="어느 날 고양이가 되었다">
+                                            <span class="bestimg">
+                                            </span>
+                                        </a>
+                                        <div class="best_account">
+                                            <h6>어느 날 고양이가 되었다</h6>
+                                            <p>siunim10</p>
+                                            <div class="summary">고양이가 된 소녀</div>
+                                            <div class="rate">
+                                                <span class="star">
+                                                    <em style="width:85%" title="점">평점</em>
+                                                </span>
+                                                <strong class="score">8.55</strong>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>                    
+                    
+                </div>
+                <div class="genre_book">
+                    <h4><p3>장르별</p3><p4> 인기 단행본만화</p4></h4>
+                    <ul class="genre_booklist">
+                        <li>
+                            <h9 class="genre_title">순정</h9>
+                            <ul class="genre_love">
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20201023_17/pocket_1603419723384oo2ty_JPEG/___.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                        <h8>비 내리는 밤</h8>
+                                        <p class="genre_author">이상은</p>
+                                        <div class="genre_account">아버지의 죽음을 계기로 갈 곳이 사라진 여원은 재혼한 어머니의 손에 이끌려 의붓아버지인 박 의원의 집에서 살게 된다. 
+                                            무조건적인 희생을 강요하는 어머니와 자신의 성을 물려주지 않은 의붓아버지 밑에서 집안의 미운 오리 새끼로 살아온 여원은 염치가 있으면 집안에 보탬이 되라는 새언니의 말에 떠밀려 선을 보게 된다. 약속 당일, 네 시간이 지나서야 그녀 앞에 나타난 사람은 누가 봐도 완벽한 남자, 서유인. 유인과 대화하며 물 흐르듯 시간이 가는 기분을 느낀 원은 유인에게 자신과 ‘앞으로 세 번 정도, 더 진지하게 만날 생각 있냐’고 제안하..</div>
+                                        <div class="genre_ratebox">
+                                            <em style="width:99%" class="genre_star"></em>
+                                            <strong class="rate_score">9.9</strong>                 
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20200116_141/pocket_1579100643374j5c7i_JPEG/__.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                        <h8>깔리는 줄 알았던 내 상사가 나를 덮친다</h8>
+                                        <p class="genre_author">Nono Shimanaga</p>
+                                        <div class="genre_account">회사엔 비밀로 BL 만화가를 하고 있는 우메코는 모태솔로로, 회사 상사인 미야카도를 수로 상상하며 즐거워 하고 있다.
+                                            어느 날, 편집자로부터 우메코의 만화는 부족..</div>
+                                        <div class="genre_ratebox">
+                                            <em class="genre_star" style="width:89%"></em>
+                                            <strong class="rate_score">8.9</strong>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <h9 class="genre_title">소년</h9>
+                            <ul class="genre_boy">
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20190514_230/pocket_1557799779805j5LYw_JPEG/__%28%29.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                        <h8>엘피스 전기:더 라스트</h8>
+                                        <p class="genre_author">Dr.대길&Bart.D</p>
+                                        <div class="genre_account">엘피스 연방 과학연구원 소속 탐사대 대원들은 신비한 알을 발견한다.  
+                                        소울 몬스터의 알이라고 생각한 알에서는 한 아이가 태어나는데… 그 아이의 스피릿은 블루그..</div>
+                                        <div class="genre_ratebox">
+                                        <em style="width:94%" class="genre_star"></em>
+                                        <strong class="rate_score">9.4</strong>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20210421_282/pocket_1619000415042694vm_JPEG/115.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                        <h8>도시의 전설</h8>
+                                        <p class="genre_author">BOE COMIC</p>
+                                        <div class="genre_account">다섯 명의 절대 강자가 키운 고아 강진모는 부모님의 죽음에 관한 진실을 조사하기 위해 도시에 발을 딛는다. 하지만 진실을 밝히기는 어렵다. 강진모는 과연 과거의 미제 사건을 해결할 수 있을까?</div>
+                                        <div class="genre_ratebox">
+                                            <em class="genre_star" style="width:63%"></em>
+                                            <strong class="rate_score">6.3</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h9 class="genre_title">무협</h9>
+                            <ul class="genre_chivalry">
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20190925_271/pocket_1569414962912tBBaB_JPEG/001.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                    
+                                        <h8>백련성신</h8>
+                                        <p class="genre_author">연재공작실</p>
+                                        <div class="genre_account">백만 번의 단련을 통해 신의 경지에 오르다!  .</div>
+                                        <div class="genre_ratebox">
+                                            <em class="genre_star" style="width:81%"></em>
+                                            <strong class="rate_score">8.1</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="https://comicthumb-phinf.pstatic.net/20200810_238/pocket_1597038778287zwRVL_JPEG/000.jpg?type=m80">
+                                    <div class="genre_accountbox">
+                                        <h8>마황의 귀환</h8>
+                                        <p class="genre_author">WUER COMIC</p>
+                                        <div class="genre_account">팔황 중 제1인으로 성계를 주름잡던 마황 사마영은 믿어왔던 제자의 배신과 나머지 7황의 계략으로 나락으로 떨어지고 만다.
+                                            눈을 뜬 사마영은 자신과 같은 이름인 귀운산장 하인 황영의 몸에 들어왔다는 사실을 깨닫고 이 몸으로 다시 수련하여 칠황과 배신한 제자에 대한 복수를 다짐한다. 하지만 그런 그의 발목을 잡은 건 다름아닌 황영의 심마, 귀운산장 아가씨 단운혜..</div>
+                                        <div class="genre_ratebox">
+                                            <em class="genre_star" style="width:93%"></em>
+                                            <strong class="rate_score">9.3</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="sidearea">
+                <!--광고-->
+                <img src="https://ssl.pstatic.net/tveta/libs/1331/1331736/f1dfd2ada6fa3dc51bf6_20210411234533741.jpg" class="ad" alt="광고">
+                <!--웹툰 올리기-->
+                <div class="webtoonupload">
+                    <a herf="#" class="webtoonupload_text">웹툰 올리기</a>
+                </div>
+                <!--웹툰광고-->
+                <img src="https://naverwebtoon-phinf.pstatic.net/20210414_60/1618406299506TlGw2_JPEG/upload_832236373774656806.JPEG?type=p100" alt="웹툰광고" class="webtoonad">
+                
+                <!--인기급상승 만화-->
+                <div class="popularwebtoon">
+                    <h7 class="title">인기급상승 만화</h7>
+                    <ul class="order_box">
+                        <div class="popular_order">인기순</div>
+                        <div class="update_order">업데이트순</div>  
+                    </ul>
+                    <ul class="order_chart">
+                        <ul class="orderlist">
+                            <li>
+                                <div class="order_left"><p class="num">1</p><p class="webtoonchart">연애혁명 328화-GOOD-BYE,2hak nyean!</p>
+                                </div>
+                                <div class="rank_box"><img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">2</p><p class="webtoonchart">더 복서-70화 가속(2)</p>
+                                </div>
+                                <div class="rank_box"><img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">
+                                <p class="num">3</p><p class="webtoonchart">독립일기-84화 만우절 쿠키 만들기</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">4</p><p class="webtoonchart">이두나!-88화 두근두근 애정촌</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                                <div class="order_left">
+                                    <p class="num">5</p><p class="webtoonchart">기기괴괴-326화 마귀인간#1</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </ul>
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">6</p><p class="webtoonchart">노답소녀-24화</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">  
+                                    <p class="num">7</p><p class="webtoonchart">화이트 블러드-66화</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                    <p class="0">0</p>
+                                </div>
+                                
+                            </li>
+
+                            
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">8</p><p class="webtoonchart">바른연애길잡이-146</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">9</p><p class="webtoonchart">정글쥬스-17화</p>
+                                </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_left">
+                                    <p class="num">10</p><p class="webtoonchart">나노마신-046.제18장 전화위복(2)</p>
+                                    </div>
+                                <div class="rank_box">
+                                    <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif"><p class="0">0</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    
+                    </div>
+        
+            
+
+                <!--실시간 인기만화-->
+                
+                <div class="realtimesurge">
+                    <h7 class="title">20대 실시간 인기만화</h7>
+                    <ul class="order_box">
+                        <div id="man" class="popular_order">남자</div>
+                        <div id="woman" class="update_order">여자</div> 
+
+                    </ul>
+                    <ol class="realtime_rank">
+                        <li>
+                            <div class="order_left">
+                                <a class="num">1</a><img class="realtime_img" src="https://shared-comic.pstatic.net/thumb/webtoon/762071/thumbnail/thumbnail_IMAG10_678df15d-10da-4118-a778-cd17f0ca4667.jpg">
+                            </div>
+                            <div class="realtime_account">
+                                <a class="realtime_webtoon">욕망일기</a>
+                                <a class="realtime_author">김주인/박태준 만화...</a>
+                            </div>
+                            <div class="realtime_side">
+                                <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                <a class="0">0</a>  
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order_left">
+                                <a class="num">2</a><img class="realtime_img" src="https://shared-comic.pstatic.net/thumb/webtoon/727188/thumbnail/thumbnail_IMAG10_f01cc201-02c6-4a40-8c1a-e3db0c256876.jpg">
+                            </div>
+                            <div class="realtime_account">
+                                <a class="realtime_webtoon">취사병 전설이 되다</a>
+                                <a class="realtime_author">제이로빈/이진수</a>
+                            </div>
+                            <div class="realtime_side">
+                                <img src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                <a class="0">0</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order_left">
+                                <a class="num">3</a><img class="realtime_img" src="https://shared-comic.pstatic.net/thumb/webtoon/650305/thumbnail/title_thumbnail_20161209212128_t83x90.jpg">
+                            </div>
+                            <div class="realtime_account">
+                                <a class="realtime_webtoon">호랑이 형님</a>
+                                <a class="realtime_author">이상규</a>
+                            </div>
+                            <div class="realtime_side">
+                                <img class="change_none" src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                <a class="0">0</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order_left">
+                                <p class="num">4</p><img class="realtime_img" src="https://shared-comic.pstatic.net/thumb/webtoon/765157/thumbnail/thumbnail_IMAG10_cd8edb81-895b-441b-a63f-b29ad5eb04a1.jpg">
+                            </div>
+                            <div class="realtime_account">
+                                <a class="realtime_webtoon">좀비 파이트</a>
+                                <a class="realtime_author">이저녁</a>
+                            </div>
+                            <div class="realtime_side">
+                                <img class="change_none" src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                <a class="0">0</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order_left">
+                                <a class="num">5</a><img class="realtime_img" src="https://shared-comic.pstatic.net/thumb/webtoon/762277/thumbnail/thumbnail_IMAG10_f0939c87-51b1-44c8-a8de-8070913799b7.jpg">
+                            </div>
+                            <div class="realtime_account">
+                                <a class="realtime_webtoon">지옥급식</a>
+                                <a class="realtime_author">둘기마요</a>
+                            </div>
+                            <div class="realtime_side">
+                                <img class="change_none" src="https://ssl.pstatic.net/static/comic/images/migration/common/arrow_no.gif">
+                                <a class="0">0</a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <!--공지사항-->
+                <div class="notifition">
+                    <div class="note_title">
+                        <h10>공지사항</h10>
+                        <h11 class="more">더보기</h11>
+                    </div>
+                    <div class="note_box">
+                        <ul class="note_list">
+                            <li>네이버웹툰 연재 작가를 모십니다!</li>
+                            <li>네이버웹툰 미리보기/완결보기 컨텐츠별 이용가 관련 안내</li>
+                            <li>2021 지상최대공모전 웹툰 부문 개최 안내</li>
+                            <li>2021년 4월 유료화 전환 작품 안내</li>
+                            <li>[장애공지] 4/20 웹툰 내 댓글 좋아요/싫어요 수치 업데이트 지연오류(복구완료)</li>
+                        </ul>
+                    </div>
+                </div>  
+                <!--웹툰 공고-->  
+                <img src="https://ssl.pstatic.net/static/comic/images/bnr_partnership.jpg" class="webtoonad_bottom">
+                <img src="https://ssl.pstatic.net/static/comic/images/bnr_joinus.jpg" class="webtoonad_bottom">
+                <img src="https://ssl.pstatic.net/static/comic/images/bnr_careers.jpg" class="webtoonad_bottom">
+                <button class="FAQ">만화 FAQ</button>
+            </div>
+          
+
+    </div>
+    <footer>
+    <div id="footer_top">
+        <div class="naver_footer1">
+            <ul class="footer1">
+                <li class="footer">이용약관</li>
+                <li><span class="bar"></span></li>
+                <li class="footer_bold">개인정보처리방침</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">책임의 한계와 법적고지</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">고객센터</li> 
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 광고 문의</li>
+            </ul> 
+            <br><a herf="https://www.navercorp.com/" class="navercorp">
+            ⓒ NAVER CORP.
+            </a>
+        </div>
+        <span class="bar2"></span>
+        <div class="naver_footer2">
+            <ul class="footer2">
+                <li class="footer">이용약관</li>
+                <li><span class="bar"></span></li>
+                <li class="footer_bold">개인정보처리방침</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">청소년보호정책</li>
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 고객센터</li> 
+                <li><span class="bar"></span></li>
+                <li class="footer">웹툰 사업 문의</li>
+            </ul>
+            <br><a herf="https://webtoonscorp.com/" class="navercorp">ⓒNAVER WEBTOON Limited</a>
+        </div>      
+    </div>
+        <div class="footer_text">
+        본 콘텐츠의 저작권은 저자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다. 
+        </div>
+</footer>
+</body>
+</html>

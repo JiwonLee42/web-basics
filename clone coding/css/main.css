@@ -1,0 +1,1179 @@
+body{
+font-size: 12px;
+color: #434343;
+height: 100%;
+margin: 0;
+background: #fff;
+text-align: center;
+display: block;
+}
+
+a{
+    text-decoration:none;
+}
+
+material-icons{
+    cursor: pointer;
+}
+
+div#wrap{
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+li,ul{
+    list-style: none;
+}
+
+ul{
+    display: block;
+  }
+  
+
+/*헤더*/
+
+header{
+    margin: 0;
+    padding: 0;
+    display:block;
+}
+
+#headerpage{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+#headerpage h1 .naver_logo{
+    float: left;
+    width: 53px;
+    height: 10px;
+    background-position: 0 -170px;
+    margin-top: 6px;
+    color: black;
+}
+
+.naver_logo{
+    display: inline-block;
+    font-family:Arial;
+    vertical-align: top;
+    font-weight:1000;
+}
+
+.naver_comic{
+    float:left;
+    vertical-align: top; /*수직정렬*/
+    font-family:'Noto Sans KR', sans-serif;
+    width: 40px;
+    height: 21px;
+    background-position: -65px -170px;
+    margin-left: 7px;
+    font-size:20px;
+    font-weight:bolder;
+    color:black;
+}
+
+[class="naver_comic"]{
+    display: inline-block;
+}
+
+
+#bar{
+    float: left;
+    overflow: hidden;
+    width: 1px;
+    height: 13px;
+    margin: 6px 10px 0 8px;
+    background-color: #d2d2d2;
+    line-height: 1000px;
+    vertical-align: top;
+}
+
+.naver_novel{
+    float: left;
+    width: 40px;
+    height: 15px;
+    background-position: -120px -170px;
+    font-family:'Noto Sans KR', sans-serif;
+    margin-top: 3px;
+    font-weight:bolder;
+    color:#434343;
+    font-size: 14px;
+
+}
+
+[class="naver_novel"]{
+    display: inline-block;
+}
+
+.headerarea{
+    height: 37px; 
+    padding: 10px 0 8px;
+}
+.searchbox{
+    float: left;
+    position: relative;
+    z-index: 50;
+    width: 268px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 35px 0 10px;
+    border: 1px solid #e5e5e5;
+    margin-left:20px;
+}
+button.searchicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    padding: 8px;
+}
+button.searchicon span.material-icons{
+    width: 17px;
+    height: 17px;
+    background-position: -220px 0;
+    float:right;
+}
+
+input#search_box{
+    width: 40px;
+    border: 0;
+    color: #737373;
+    font-size:12px;
+    display: block;
+
+}
+.headersectionright{
+ margin:0;
+ padding:0;
+}
+span.log_in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 20px;
+    padding-left: 1px;
+    line-height: 21px;
+    color: #666;
+    text-align: center;
+    border: 2px #666;
+    display:block;
+    margin-right:60px;
+    float:left;
+}
+.headerright{
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    z-index: 500;
+    margin-right: 14px;
+    float:right;
+    width:100px;
+}
+
+.headerright span.material-icons{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: -2px -130px;
+    margin-right:20px;
+    float:right;
+}
+/*메뉴*/
+
+#menu{
+    border-top: 1px solid #e4e2e2;
+    border-bottom: 1px solid #eeebeb;
+    padding: 0 10px;
+    display:block;
+
+}
+
+
+#menu ul.menu_one li div{
+    width: 13px;
+    height: 14px;
+    margin-top: 13px;
+}
+
+ul.menu_one{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display:block;
+    height:40px;
+
+}
+
+#menu ul.menu_one li{
+
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+    color: black;
+    float: left;
+    background-position: 0 -20px;
+    position: relative;
+    
+}
+#menu ul.menu_one li a{
+    display:inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Noto Sans KR', sans-serif;
+    color: black;
+}
+
+span.bar{
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #ced2d6;
+    vertical-align: top;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.newwebtoon a{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    float:left;
+    height: 41px;
+    color: #fff;
+    padding-top: 1px;
+    background-color:rgb(4, 226, 52);
+    margin: -1px 0;
+}
+
+header:after{
+    display: block;
+    clear: both;
+}
+
+#menu:after{
+    display: block;
+    clear: both;
+}
+
+/*메인*/
+
+.main{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    height: 250px;
+}
+
+.mainpage{
+    float: left;
+}
+
+.textarea{
+    float: left;
+    width: 91px;
+    height: 250px;
+    padding: 0 5px 0 15px;
+    border: 1px solid #e5e5e5;
+    border-right: 0;
+    
+}
+
+h2{
+    width: 79px;
+    height: 61px;
+    background-position: 0 -100px;
+    margin-top: 20px;
+    vertical-align: top;
+    font-family:'Noto Sans KR', sans-serif;
+    font-size:27px;
+}
+
+.main_order{
+
+    margin:5px;
+    padding-top:50px;
+    float: bottom;
+    display:block;
+    
+}
+ul.mainorder_list li{
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: 60px;
+    font-size:13px;
+    margin-top: 10px;
+    margin-bottom:10px;
+
+}
+
+p1{
+    color:black;
+}
+
+p2{
+    color:rgb(4, 226, 52);
+}
+
+
+main:after{
+    display: block;
+    clear: both;
+}
+
+.webtoonarea:after{
+    display: block;
+}
+ul.listarea:after{
+    display: block;
+}
+
+.webtoonarea{
+    float: left;
+    width: 582px;
+}
+.mainimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bigimg{
+    width: 582px;
+    aspect-ratio: auto 582 / 195;
+    height: 195px;
+}
+.webtoonlist{
+    position: relative;
+    padding: 0 20px 0 19px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+a.previous span.material-icons{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 15px;
+}
+a.previous{
+    left: 0;
+    width: 19px;
+    position: absolute;
+    top: 0;
+    height: 57px;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left:1px solid #e5e5e5;
+    border-top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+a.next{
+    right: 0;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    height: 57px;
+    background-color: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-left:1px solid #e5e5e5;
+    border-top: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+a.next span.material-icons{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+ul.listarea{
+    display:block;
+    width: 582px;
+    overflow:hidden;
+    height:57px;
+}
+
+ul.listarea li{
+    float:left;
+    width: 134px;
+    border-left: 1px solid #e5e5e5;
+}
+
+/*새로운 도전만화*/
+
+div.newchallenge{
+    float: right;
+    width: 202px;
+    height: 250px;
+    padding: 0 18px;
+    background: #f9f9fc;
+    border: 1px solid #ebebeb;
+    margin-left:20px;
+}
+a.name{
+    float:right;
+    display:block;
+    font-weight:normal;
+    margin-top:10px;
+}
+h3 {
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom:10px;
+    padding-right:2px;
+    font-size:16px;
+    font-family:'Noto Sans KR', sans-serif;
+}
+img.webtoonimg{
+    width: 202px;
+    aspect-ratio: auto 202 / 110;
+    height: 110px;
+}
+div.account{
+    font-size:10px;
+    color:#666;
+    margin-top:20px;
+}
+.newchallaccount{
+    font-size:13px;
+    display:block;
+
+}
+.newchallname{
+    float:left;
+    display:block;
+    font-weight:bolder;
+    margin-top:10px;
+}
+/*section*/
+#section{
+    clear: both;
+    position: relative;
+    width: 980px;
+    padding: 8px 0 100px;
+    margin: auto;
+    
+}
+.leftarea{
+    padding: 10px;
+    margin: 5px;
+    width: 694px;
+    position: relative;
+    float:left;
+    
+}
+/*장르별 웹툰*/
+.genrewebtoonrecommend{
+    float:left;
+    overflow: hidden;
+    width:694px;
+}
+h4{
+    padding-top: 30px;
+    font-weight:bolder;
+    font-size:18px;
+    display:block;
+    position: relative;
+    text-align:left;
+    border-bottom: 1px #d2d2d2;
+    margin-bottom: 10px;
+}
+.genremain{
+    width: 140px;
+    height: 20px;
+}
+ul.genrewebtoonlist{
+    display:block;
+    border-bottom: 1px solid #e5e5e5;
+    height:20px;
+}
+ul.genrewebtoonlist li a{
+    display: inline-block;
+    font-size: 13px;
+    color:#434343;
+    padding: 0 2px 6px;
+    font-weight:bolder;
+
+}
+
+
+ul.genrewebtoonlist li{
+    float: left;
+    padding: 0 6px;
+
+}
+
+ul.genrewebtoonlist li a img{
+    width: 210pxl
+}
+p3{
+    color:black;
+}
+
+p4{
+    color:rgb(4, 226, 52);
+}
+
+#genre{
+    margin-top: 12px;
+    width:694px;
+}
+.webtoonorder{
+    margin: 12px 0;
+    width:694px;
+    height:30px;
+}
+
+ul.order_list{
+    margin-top: 3px;
+    float:right;
+    display:block;
+
+}
+ul.order_list li {
+    font-weight:bolder;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#666;
+    float:left;
+    margin-left:12px;
+}
+
+
+ul.genreimglist{
+    overflow: hidden;
+    margin: 0 -10px;
+    padding-bottom: 17px;
+}
+
+ul.genreimglist li{
+    height: 196px;
+    float: left;
+    padding: 0 10px;
+    width: 218px;
+}
+div.genreaccount{
+    text-align:left;
+}
+
+h5{
+    color: #434343;
+    font-size: 12px;
+    font-weight:bolder;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+p{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+span.author{
+    margin-top:5px;
+}
+
+
+
+/*베스트도전&도전만화*/
+
+.best_challenge{
+    overflow: hidden;
+    width:694px;
+    float:left;
+    text-align:left;
+}
+
+
+ul.challengewebtoon{
+    padding-bottom: 33px;
+    overflow: hidden;
+}
+
+
+ul.challengewebtoon li{
+    float: left;
+    width: 218px;
+    padding-left:10px;
+}
+
+h5{ 
+    font-size: 13px;
+    color: #555;
+    margin-top: 14px;
+
+}
+
+ul.challengewebtoon img{
+    width: 83px;
+    aspect-ratio: auto 83 / 90;
+    height: 90px;
+}
+
+.best_account{
+    float: right;
+    overflow: hidden;
+    width: 127px;
+    margin-left: 7px;
+}
+
+h6{
+    font-size:13px;
+    font-weight:bolder;
+    display: block;
+}
+
+p{
+    font-weight:normal;
+    font-size:12px;
+    display: block;
+}
+div.summary{
+    height: 32px;
+    margin: 10px 0 7px 0;
+    color: #434343;
+    line-height: 16px;
+    font-size:12px;
+}
+
+div.rate{
+    width: 90px;
+    height: 14px;
+    padding:0px;
+}
+
+span.star em{
+
+    display: block;
+    background: url(https://ssl.pstatic.net/static/comic/images/migration/common/sp_star.gif) no-repeat 0 -19px;
+    text-indent: -9999px;
+    text-align:left;
+    float:left;
+
+}
+
+span.star{
+    width: 60px;
+    height: 14px;
+    display:block;
+}
+
+.score{    
+    display:inline-block;
+    margin-left: 3px;
+    font-size:11px;
+    color:black;
+    padding-left:0px;
+    vertical-align: middle;
+}
+
+/*장르별 인기 단행본만화*/
+
+
+.genre_book{
+    float: left;
+    overflow: hidden;
+    width: 694px;
+}
+
+ul.genre_booklist li{
+    float:left;
+    text-align:left;
+    display:block;
+    padding: 0 10px;
+    width: 210px;
+}
+
+ul.genre_booklist{
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+ul.genre_booklist img{
+    float:left;
+}
+
+h9{
+    font-size: 14px;
+    color: #555;
+    margin-top: 13px;
+    text-align:left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:bolder;
+    margin-bottom: 8px;
+
+
+}
+
+
+h8{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+    font-weight:bolder;
+    text-overflow:ellipsis; /*초과시 말줄임표 표시*/
+    white-space: nowrap;  /*줄바꿈 방지*/
+}
+
+.genre_author{
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.genre_accountbox{
+    float: right;
+    width: 115px;
+    margin: 1px 0 0 7px;
+    padding-top: 1px;
+    text-align:left;
+
+}
+
+.genre_love li,.genre_boy li,.genre_chivalry li{
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.genre_account{
+ text-overflow:ellipsis; /*초과시 말줄임표 표시*/
+ overflow:hidden;
+ white-space: nowrap; 
+ margin-top: 5px;
+ height: 55px;
+}
+.genre_star{
+    display: inline-block;
+    height: 13px;
+    background: url(https://ssl.pstatic.net/static/comic/images/migration/common/sp_star.gif)
+    no-repeat 0 0;
+    text-align: left;
+    vertical-align: middle;
+    width: 60px!important;
+    height: 14px!important;
+}
+.rate_score{
+    display: inline-block;
+    margin-left: 2px;
+    font-size:12px;
+    text-align:right;
+    font-weight:bold;
+}
+
+.genre_ratebox{
+    height: 14px;
+    width: 120px;
+}
+
+.genre_account{ 
+    font-size: 10px;
+    line-height: 1.2; 
+    height: 40px;
+
+}
+/*right section*/
+
+.sidearea{
+    float: right;
+    width: 240px;
+    padding-right: 10px;
+}
+
+
+.ad{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #ced2d6;
+    float: right;
+}
+
+.webtoonupload{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: block;
+    width: 240px;
+    background-color:rgb(4, 226, 52);
+    padding-top:15px;
+    padding-bottom:15px;
+    border: 1px solid #ced2d6;
+    float: right;
+}
+
+.webtoonupload_text{
+    text-align:center;
+    color:white;
+    font-weight: 800px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.webtoonad{
+    width: 240px;
+    aspect-ratio: auto 240 / 97;
+    height: 97px;
+    border:1px solid #d2d2d2;
+    float:right;
+
+}
+
+
+
+/*인기급상승 만화*/
+
+
+
+/*차트타이틀*/
+
+.popularwebtoon{
+    width: 240px;
+    margin-top: 10px;
+    border: 1px solid #d2d2d2;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    float:right;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    height: 35x;
+    width: 238px;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: left;
+    font-weight: bolder;
+    display:block;
+    padding: 10px;
+
+}
+ul.order_box{
+    float:none;
+    align-items:center;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:center;
+    font-weight:bold;
+    font-size:13px;
+    width: 240px;
+    height: 30px;
+
+}
+.popular_order{
+
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+
+    float:left;
+    width: 115px;
+    height: 30px;
+    padding-top:10px;
+}
+
+.update_order{
+    text-align:center;
+    float:right;
+    width: 120px;
+    height: 30px;
+    border-bottom: 1px solid #d2d2d2;
+    padding-top:10px;
+
+}
+
+
+/*차트내용*/
+
+.order_left{
+    float:left;
+
+}
+
+.order_chart{
+    margin-top:20px;
+    position:relative;
+}
+.num{
+    font-size:11px;
+    font-weight:bolder;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align:left;
+    display:block;
+    margin-left: 10px;
+    height:14px;
+    float:left;
+    
+}
+
+ul.orderlist li{
+    position: relative;
+    width: 230px;
+    height: 16px;
+    display:block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.webtoonchart{
+
+    white-space: nowrap; /*줄바꿈 방지*/
+    text-overflow:ellipsis; /*초과시 내용 자르기*/
+    overflow:hidden;
+    font-size:11px;
+    text-align:left;
+    margin-left:5px;
+    float:right;
+    width: 145px;
+
+}
+[class="0"]{
+    text-align:right;
+    display:block;
+    float:right;
+    height:14px;
+}
+
+ul.orderlist{
+    padding-top:13px;
+    padding-bottom: 8px;
+    margin-top: 15px;
+    position: relative;
+    padding: 15px 0 7px;
+    list-style: decimal;
+}
+
+ul.orderlist img{
+    width:10px;
+    height:5px;
+    float:left;
+}
+div.rank_box{
+    float:right;
+    width:30px;
+    height:14px;
+}
+/*실시간 급상승 인기만화*/
+.realtimesurge{
+    border: 1px solid #ced2d6;
+    clear: both;
+    margin-top: 8px;
+
+}
+ol.realtime_rank{
+    position: relative;
+    padding: 15px 0 7px;
+    list-style: decimal;
+}
+
+ol.realtime_rank li{
+    margin: 0 0 5px 13px;
+    position:relative;
+    height: 50px;
+}
+.realtime_img{
+
+    width: 30px;
+    aspect-ratio: auto 30 / 33;
+    height: 33px;
+    float:left;
+}
+
+.realtime_account{
+    text-align:left;
+    font-size: 12px;
+    width: 180px;
+}
+
+.realtime_side{
+    float: right;
+    margin: -2px 0 2px;
+    vertical-align: top;
+    text-align:right;
+    align-items:center;
+
+    width: 30px;
+}
+
+.change_none {
+    font-size: 10px;
+    text-align:right;
+    line-height: 15px;
+    margin-right: 10px;
+}
+
+.realtime_webtoon, .realtime_author{
+    display:block;
+}
+
+.realtime_author{
+    margin-top: 10px;
+}
+
+/*공지사항*/
+
+.notifition{
+    border: 1px solid #d2d2d2;
+    margin-top: 20px;
+    float:right;
+    overflow: hidden;
+    position: relative;
+    margin-bottom:10px;
+
+}
+.note_title{
+  height: 16px;
+  padding: 8px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+h10{
+    text-align:left;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+    float:left;
+
+}
+h11{
+    text-align:right;
+    font-size:11px;
+    font-weight: 1px lighter;
+    float: right;
+
+}
+ul.note_list li{
+
+    white-space: nowrap; /*줄바꿈 방지*/
+    text-overflow:ellipsis; /*초과시 내용 자르기*/
+    text-align:left;
+    font-size:10px;
+    font-weight:normal;
+    list-style:circle;
+    width: 230px;
+    padding: 3px;
+    overflow:hidden;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.note_box{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/*웹툰 공고*/
+.webtoonad_bottom{
+    width: 240px;
+    height:86px;
+    margin-top:8px;
+    margin-bottom:8px;
+    
+}
+
+button.FAQ{
+    width:240px;
+    margin-top:7px;
+    padding-top:7px;
+    margin-bottom: 7px;
+    padding-bottom:7px;
+    text-align:center;
+    font-weight:bolder;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 2px #555;
+    height: 30px;
+    display:block;
+    background-color: whitesmoke;
+}
+/*footer*/
+
+footer{
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+    padding-top:40px;
+    border-top: 1px solid #e6e7e8;
+    display:block;
+    font-size:12px;
+    padding-bottom:60px;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.naver_footer1{
+    float: left;
+    width: 480px;
+}
+
+ul.footer1 li,ul.footer2 li{
+    float:left;
+}
+
+.naver_footer2{
+    float:right;
+    width:450px;
+    position:relative;
+}
+li.footer,li.footer_bold{
+    margin:1px;
+}
+
+span.bar2{
+    height:30px;
+    color:#666;
+}
+
+span.bar{
+    height:16px;
+    color:#666;
+    margin:3px;
+}
+
+li.footer_bold{
+    font-weight:bolder;
+}
+
+.navercorp{
+    text-align:left;
+    font-weight:lighter;
+    font-size:14px;
+    width:200px;
+    height:15px;
+    float:left;
+    margin-bottom:15px;
+    margin-top:12px;
+}
+
+.footer_text{
+    padding-top: 60px;
+    position:absolute;
+    margin-bottom:30px;
+}
+
+#footer_top::after{
+    display:block;
+}
+
+#footer_top{
+    width:940px;
+    height:30px;
+}
+
