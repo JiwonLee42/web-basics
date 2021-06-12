@@ -8,20 +8,27 @@ text-align: center;
 display: block;
 }
 
+
 a{
     text-decoration:none;
+}
+
+img{
+    cursor: pointer;
 }
 
 material-icons{
     cursor: pointer;
 }
 
-div#wrap{
+div.end_page{
     position: relative;
-    height: 100%;
+    height: 2600px;
     margin: 0 auto;
     text-align: left;
+    width: 1000px;
 }
+
 li,ul{
     list-style: none;
 }
@@ -30,6 +37,32 @@ ul{
     display: block;
   }
   
+
+/*scroll to top*/
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+    
+    /* 페이지 내에 scrollToTop 기능을 갖는 모든 요소는 둥둥이로 만듭니다 */
+    
+    .scrollToTop {
+        display: inline-block;
+        animation: float 6s ease infinite;
+        width: 200px;
+        height: 200px;
+
+        /* 스크롤 위치에 따라 opacity값이 바뀔 때 자연스럽게 변하도록 합니다 */
+        transition: .4s;
+    }
 
 /*헤더*/
 
@@ -113,6 +146,7 @@ header{
     height: 37px; 
     padding: 10px 0 8px;
 }
+
 .searchbox{
     float: left;
     position: relative;
@@ -143,13 +177,17 @@ button.searchicon span.material-icons{
 }
 
 input#search_box{
-    width: 40px;
+    width: 230px;
     border: 0;
     color: #737373;
     font-size:12px;
     display: block;
 
 }
+.search{
+    width: 230px; 
+}
+
 .headersectionright{
  margin:0;
  padding:0;
@@ -227,6 +265,7 @@ ul.menu_one{
     position: relative;
     
 }
+
 #menu ul.menu_one li a{
     display:inline-block;
     font-size: 14px;
@@ -347,13 +386,6 @@ ul.listarea:after{
     float: left;
     width: 582px;
 }
-.mainimg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
 .bigimg{
     width: 582px;
     aspect-ratio: auto 582 / 195;
@@ -365,13 +397,13 @@ ul.listarea:after{
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
 }
-a.previous span.material-icons{
+.previous span.material-icons{
     display: block;
     margin-top: 20px;
     font-size: 20px;
     line-height: 15px;
 }
-a.previous{
+.previous{
     left: 0;
     width: 19px;
     position: absolute;
@@ -382,9 +414,10 @@ a.previous{
     border-left:1px solid #e5e5e5;
     border-top: 0px;
     border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
 
 }
-a.next{
+.next{
     right: 0;
     width: 20px;
     position: absolute;
@@ -395,9 +428,10 @@ a.next{
     border-left:1px solid #e5e5e5;
     border-top: 0px;
     border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
 }
 
-a.next span.material-icons{
+.next span.material-icons{
     display: block;
     margin-top: 20px;
     font-size: 20px;
@@ -405,10 +439,17 @@ a.next span.material-icons{
 }
 
 ul.listarea{
-    display:block;
-    width: 582px;
-    overflow:hidden;
-    height:57px;
+    width:3000px;
+    margin-left: 0px;
+    height: 56px;
+}
+
+div.list{
+    overflow: hidden;
+    width: 539px;
+    height: 56px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
 }
 
 ul.listarea li{
@@ -468,6 +509,7 @@ div.account{
     clear: both;
     position: relative;
     width: 980px;
+    height: 1685px;
     padding: 8px 0 100px;
     margin: auto;
     
@@ -933,8 +975,6 @@ ul.orderlist li{
 .webtoonchart{
 
     white-space: nowrap; /*줄바꿈 방지*/
-    text-overflow:ellipsis; /*초과시 내용 자르기*/
-    overflow:hidden;
     font-size:11px;
     text-align:left;
     margin-left:5px;
@@ -1176,4 +1216,5 @@ li.footer_bold{
     width:940px;
     height:30px;
 }
+
 
