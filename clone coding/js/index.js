@@ -1,3 +1,4 @@
+//scroll to top
 const $scrollToTop = document.querySelector(".scrollToTop")
 
 $scrollToTop.addEventListener("click", function () {
